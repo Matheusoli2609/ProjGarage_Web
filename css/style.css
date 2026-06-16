@@ -40,6 +40,11 @@ header {
     font-size: 28px;
     font-weight: 700;
     color: #b11226;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav {
@@ -151,6 +156,7 @@ section p {
     border-radius: 15px;
     border: 1px solid #262626;
     transition: 0.3s;
+    cursor: default;
 }
 
 .card:hover {
@@ -167,6 +173,7 @@ ul {
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 20px;
+    cursor: default;
 }
 
 li {
@@ -174,13 +181,51 @@ li {
     border: 1px solid #262626;
     padding: 12px 20px;
     border-radius: 30px;
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateY(-8px);
+    border-color: #b11226;
+    box-shadow: 0 0 20px rgba(177, 18, 38, 0.25);
+}
+
+.contato {
+    background: #171717;
+    padding: 40px 8%;
+    border-top: 1px solid #262626;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-title h3 {
+    color: #b11226;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.footer-title p {
+    color: #bdbdbd;
 }
 
 .footer-links {
-    margin: 20px 0;
-
     display: flex;
-    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: right;
     gap: 25px;
 }
 

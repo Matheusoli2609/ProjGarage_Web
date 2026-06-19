@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: rgba(13, 13, 13, 0.95);
-    border-bottom: 1px solid #222;
+    border-bottom: 2px solid #222;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -194,12 +194,10 @@ li:hover {
     background: #171717;
     padding: 40px 8%;
     border-top: 1px solid #262626;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 30px;
 }
 
@@ -218,15 +216,13 @@ li:hover {
 
 .footer-title p {
     color: #bdbdbd;
+    max-width: 420px;
 }
 
 .footer-links {
     display: flex;
     gap: 25px;
-    margin: 20px 0;
-    display: flex;
-    justify-content: right;
-    gap: 25px;
+    align-items: center;
 }
 
 .footer-links a {
@@ -235,7 +231,7 @@ li:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .footer-links a:hover {
@@ -247,9 +243,11 @@ li:hover {
 }
 
 .copyright {
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 10px;
     font-size: 14px;
     color: #888;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -283,4 +281,19 @@ li:hover {
     section h2 {
         font-size: 30px;
     }
+}
+
+.header-scroll {
+    background: rgba(8, 8, 8, 0.98);
+    box-shadow: 0 0 20px rgba(177, 18, 38, 0.15);
+}
+
+.card, li {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card.show,li.show {
+    opacity: 1;
+    transform: translateY(0);
 }

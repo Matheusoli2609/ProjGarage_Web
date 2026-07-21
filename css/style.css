@@ -86,6 +86,14 @@ nav a:hover {
     background:
         radial-gradient(circle at top right, rgba(177, 18, 38, 0.25), transparent 35%),
         linear-gradient(135deg, #0d0d0d, #180307);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.hero.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hero h1 {
@@ -190,6 +198,26 @@ ul {
     cursor: default;
 }
 
+.tech-list li:nth-child(1){
+    transition-delay: .1s;
+}
+
+.tech-list li:nth-child(2){
+    transition-delay: .2s;
+}
+
+.tech-list li:nth-child(3){
+    transition-delay: .3s;
+}
+
+.tech-list li:nth-child(4){
+    transition-delay: .4s;
+}
+
+.tech-list li:nth-child(5){
+    transition-delay: .5s;
+}
+
 li {
     background: #171717;
     border: 1px solid #262626;
@@ -213,8 +241,17 @@ li:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    opacity:0;
+    transform:translateY(80px);
+    transition:1s;
 }
 
+.contato.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
 
 .footer-title {
     display: flex;
